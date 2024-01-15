@@ -2,7 +2,7 @@
 {
     public class SquareFunction
     {
-        public void SquareFunctionBuildAsGeneral(float a, float b, float c)
+        public void SquareFunctionBuildAsGeneral(decimal a, decimal b, decimal c)
         {
             //if (a == 0)
             //    return;
@@ -14,7 +14,7 @@
             this.W = new Point(((-b) / 2 * a), ((-Delta) / 4 * b));
         }
 
-        public void SquareFunctionBuildAsCanonical(float a, float p, float q)
+        public void SquareFunctionBuildAsCanonical(decimal a, decimal p, decimal q)
         {
             this.a = a;
             this.W = new Point(p, q);
@@ -23,7 +23,7 @@
             this.c = (-(b * b) + (-4 * a * q)) / (-4 * a);
         }
 
-        public void SquareFunctionBuildAsFactored(float a, float x1, float x2)
+        public void SquareFunctionBuildAsFactored(decimal a, decimal x1, decimal x2)
         {
             this.a = a;
             //this.x1 = x1;
@@ -35,16 +35,16 @@
             this.W = new Point(((-b) / 2 * a), ((-Delta) / 4 * b));
         }
 
-        public void SquareFunctionBuildAsFactored(float a, float x0)
+        public void SquareFunctionBuildAsFactored(decimal a, decimal x0)
         {
             //this.x0 = x0;
             SquareFunctionBuildAsFactored(a, x0, x0);
         }
 
         #region General form
-        public float a { get; private set; }
-        public float b { get; private set; }
-        public float c { get; private set; }
+        public decimal a { get; private set; }
+        public decimal b { get; private set; }
+        public decimal c { get; private set; }
 
         #endregion
 
@@ -52,7 +52,7 @@
 
         public Point W { get; private set; }
 
-        public float p
+        public decimal p
         {
             get
             {
@@ -64,7 +64,7 @@
             }
         }
 
-        public float q
+        public decimal q
         {
             get
             {
@@ -80,7 +80,7 @@
 
         #region Factored form
 
-        public float? x0
+        public decimal? x0
         {
             get
             {
@@ -92,7 +92,7 @@
             }
         }
 
-        public float? x1
+        public decimal? x1
         {
             get
             {
@@ -101,7 +101,7 @@
                 else return x0;
             }
         }
-        public float? x2
+        public decimal? x2
         {
             get
             {
@@ -113,27 +113,27 @@
 
         #endregion
 
-        public float Delta { get => (b * b) - (4 * a * c); }
-        public float? DeltaSqrt { get => (float?)System.Math.Sqrt(Delta); }
+        public decimal Delta { get => (b * b) - (4 * a * c); }
+        public decimal? DeltaSqrt { get => (decimal?)System.Math.Sqrt((double)Delta); }
 
-        public float F_GeneralForm(float x)
+        public decimal F_GeneralForm(decimal x)
         {
             return a * (x * x) + b * x + c;
         }
 
-        public float F_CanonicalForm(float x)
+        public decimal F_CanonicalForm(decimal x)
         {
             return a * (x - p) * (x - p) + q;
         }
 
-        public float? F_FactoredForm(float x)
+        public decimal? F_FactoredForm(decimal x)
         {
             if (x1 != null && x2 != null)
-                return a * (x - (float)x1) * (x - (float)x2);
+                return a * (x - (decimal)x1) * (x - (decimal)x2);
             return null;
         }
 
-        public float F(float x) => F_GeneralForm(x);
+        public decimal F(decimal x) => F_GeneralForm(x);
 
         public bool IsHaveMaximum { get { if (a < 0) return true; return false; } }
         public bool IsHaveMinimum { get { if (a > 0) return true; return false; } }

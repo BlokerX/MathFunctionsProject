@@ -2,7 +2,7 @@
 {
     internal class Rectangle
     {
-        public float a { get; private set; }
-        public float b { get; private set; }
+        public decimal a { get; private set; }
+        public decimal b { get; private set; }
     }
 }

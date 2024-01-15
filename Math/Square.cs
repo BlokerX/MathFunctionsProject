@@ -8,8 +8,8 @@ namespace BlokMath
 {
     internal class Square
     {
-        public float a { get; protected set; }
+        public decimal a { get; protected set; }
 
-        public float d { get; private set; }
+        public decimal d { get; private set; }
     }
 }

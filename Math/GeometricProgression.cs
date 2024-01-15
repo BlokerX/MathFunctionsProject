@@ -2,20 +2,20 @@
 {
     internal class GeometricProgression
     {
-        public GeometricProgression(float a1, float r)
+        public GeometricProgression(decimal a1, decimal r)
         {
             this.a1 = a1;
             this.q = r;
         }
 
-        public float a1 { get; private set; }
-        public float q { get; private set; }
+        public decimal a1 { get; private set; }
+        public decimal q { get; private set; }
 
-        public float? a(uint n)
+        public decimal? a(uint n)
         {
             if (n >= 2)
             {
-                float qTemp = q;
+                decimal qTemp = q;
 
                 for (int i = 1; i < n; i++)
                     qTemp *= q;
@@ -26,11 +26,11 @@
             return null;
         }
 
-        public float? S(uint n)
+        public decimal? S(uint n)
         {
             if(n == 0) return null;
 
-            float qTemp = q;
+            decimal qTemp = q;
             for (int i = 1; i < n; i++)
                 qTemp *= q;
 
@@ -39,9 +39,9 @@
             else return n * a1;
         }
 
-        public float an(float am, float ao)
+        public decimal an(decimal am, decimal ao)
         {
-            return (float)System.Math.Sqrt(am * ao);
+            return (decimal)System.Math.Sqrt(Double.Parse(am.ToString()) * Double.Parse(ao.ToString()));
         }
     }
 }

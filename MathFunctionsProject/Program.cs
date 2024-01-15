@@ -17,7 +17,7 @@ c_s = Console.ReadLine();
 Console.WriteLine();
 
 var squareFunction = new SquareFunction();
-squareFunction.SquareFunctionBuildAsGeneral(float.Parse(a_s), float.Parse(b_s), float.Parse(c_s));
+squareFunction.SquareFunctionBuildAsGeneral(decimal.Parse(a_s), decimal.Parse(b_s), decimal.Parse(c_s));
 
 
 Console.WriteLine("Wyniki:");

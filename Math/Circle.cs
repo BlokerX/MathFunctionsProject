@@ -8,7 +8,6 @@ namespace BlokMath
 {
     internal class Circle
     {
-        public const double pi = Math.PI;
-        public float r { get; private set; }
+        public decimal r { get; private set; }
     }
 }

@@ -8,7 +8,7 @@ namespace BlokMath
 {
     internal class RegularPolygon
     {
-        public float a { get; private set; }
-        public float r { get; private set; }
+        public decimal a { get; private set; }
+        public decimal r { get; private set; }
     }
 }

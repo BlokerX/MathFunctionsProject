@@ -2,16 +2,16 @@
 {
     public class LinearFunction
     {
-        public LinearFunction(float a, float b)
+        public LinearFunction(decimal a, decimal b)
         {
             this.a = a;
             this.b = b;
         }
 
-        public float a { get; private set; }
-        public float b { get; private set; }
+        public decimal a { get; private set; }
+        public decimal b { get; private set; }
 
-        public float? x0
+        public decimal? x0
         {
             get
             {
@@ -20,9 +20,9 @@
             }
         }
 
-        public float F(float x) => a * x + b;
+        public decimal F(decimal x) => a * x + b;
 
-        public float Derivative() => a;
+        public decimal Derivative() => a;
 
         public Polynomial ToPolynomial => new Polynomial([a, b]);
     }

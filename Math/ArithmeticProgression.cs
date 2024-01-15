@@ -2,30 +2,30 @@
 {
     public class ArithmeticProgression
     {
-        public ArithmeticProgression(float a1, float r)
+        public ArithmeticProgression(decimal a1, decimal r)
         {
             this.a1 = a1;
             this.r = r;
         }
 
-        public float a1 { get; private set; }
-        public float r { get; private set; }
+        public decimal a1 { get; private set; }
+        public decimal r { get; private set; }
 
-        public float? a(uint n)
+        public decimal? a(uint n)
         {
             if(n >= 1)
             return a1 + ((n - 1) * r);
             return null;
         }
 
-        public float? S(uint n)
+        public decimal? S(uint n)
         {
             if(n >= 1)
             return ((a1 + a(n)) / 2) * n;
             return null;
         }
 
-        public float? an(float am, float ao)
+        public decimal? an(decimal am, decimal ao)
         {
             return (am + ao) / 2;
         }

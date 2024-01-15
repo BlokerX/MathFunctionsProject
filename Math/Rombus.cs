@@ -8,9 +8,9 @@ namespace BlokMath
 {
     internal class Rombus
     {
-        public float a { get; private set; }
+        public decimal a { get; private set; }
 
-        public float e { get; private set; }
-        public float f { get; private set; }
+        public decimal e { get; private set; }
+        public decimal f { get; private set; }
     }
 }

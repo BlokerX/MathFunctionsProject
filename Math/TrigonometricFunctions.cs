@@ -2,28 +2,28 @@
 {
     public static class TrigonometricFunctions
     {
-        public static float? sin(float a, float c)
+        public static decimal? sin(decimal a, decimal c)
         {
             if (c != 0)
                 return a / c;
             return null;
         }
 
-        public static float? cos(float b, float c)
+        public static decimal? cos(decimal b, decimal c)
         {
             if (c != 0)
                 return b / c;
             return null;
         }
 
-        public static float? tg(float a, float b)
+        public static decimal? tg(decimal a, decimal b)
         {
             if (b != 0)
                 return a / b;
             return null;
         }
 
-        public static float? ctg(float a, float b)
+        public static decimal? ctg(decimal a, decimal b)
         {
             if (a != 0)
                 return b / a;
@@ -32,24 +32,24 @@
 
 
 
-        public static float? sin(float alpha)
+        public static decimal? sin(decimal alpha)
         {
-            return (float)Math.Sin(alpha);
+            return (decimal)Math.Sin((double)alpha);
         }
 
-        public static float? cos(float alpha)
+        public static decimal? cos(decimal alpha)
         {
-            return (float)Math.Cos(alpha);
+            return (decimal)Math.Cos((double)alpha);
         }
 
-        public static float? tg(float alpha)
+        public static decimal? tg(decimal alpha)
         {
-            return (float?)Math.Tan(alpha);
+            return (decimal?)Math.Tan((double)alpha);
         }
 
-        public static float? ctg(float alpha)
+        public static decimal? ctg(decimal alpha)
         {
-            return (float?)(Math.Cos(alpha) / Math.Sin(alpha));
+            return (decimal?)(Math.Cos((double)alpha) / Math.Sin((double)alpha));
         }
 
 

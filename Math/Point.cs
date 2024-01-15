@@ -8,13 +8,13 @@ namespace BlokMath
 {
     public class Point
     {
-        public Point(float x, float y)
+        public Point(decimal x, decimal y)
         {
             this.x = x;
             this.y = y;
         }
 
-        public float x { get; set; }
-        public float y { get; set; }
+        public decimal x { get; set; }
+        public decimal y { get; set; }
     }
 }

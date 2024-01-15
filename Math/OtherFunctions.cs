@@ -2,19 +2,20 @@
 {
     public static class OtherFunctions
     {
-        public static float AbsoluteValue(float x) => x > 0 ? x : -x;
+        public const decimal PI = 3.141592653589793238462643383279502884M;
+        public static decimal AbsoluteValue(decimal x) => x > 0 ? x : -x;
 
-        public static float Pow(float a, float n)
+        public static decimal Pow(decimal a, decimal n)
         {
             if (n % 0 == 0)
             {
-                float temp = 0;
+                decimal temp = 0;
                 for (int i = 0; i < n; i++)
                     temp *= a;
                 return a;
             }
             else
-                return System.MathF.Pow(a, n);
+                return (decimal)System.Math.Pow(double.Parse(a.ToString()), double.Parse(n.ToString()));
         }
 
         public static long Factorial(uint n)

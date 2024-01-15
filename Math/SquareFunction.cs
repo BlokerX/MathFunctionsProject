@@ -137,5 +137,9 @@
 
         public bool IsHaveMaximum { get { if (a < 0) return true; return false; } }
         public bool IsHaveMinimum { get { if (a > 0) return true; return false; } }
+
+        // Viete:
+        // x1 + x2 = -b/a
+        // x1 * x2 = c/a
     }
 }

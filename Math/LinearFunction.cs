@@ -21,5 +21,7 @@
         }
 
         public float F(float x) => a * x + b;
+
+        public float Derivative() => a;
     }
 }

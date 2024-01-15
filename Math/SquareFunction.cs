@@ -141,5 +141,10 @@
         // Viete:
         // x1 + x2 = -b/a
         // x1 * x2 = c/a
+
+        public LinearFunction Derivative()
+        {
+            return new LinearFunction(2 * a, b);
+        }
     }
 }

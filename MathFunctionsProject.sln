@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathFunctionsProject", "MathFunctionsProject\MathFunctionsProject.csproj", "{AEE0885D-9AE4-45D9-A7E2-C486406AF7C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlokMath", "Math\BlokMath.csproj", "{5A87D64A-3A26-42DF-93A7-4F19FBD86861}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEE0885D-9AE4-45D9-A7E2-C486406AF7C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE0885D-9AE4-45D9-A7E2-C486406AF7C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE0885D-9AE4-45D9-A7E2-C486406AF7C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE0885D-9AE4-45D9-A7E2-C486406AF7C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8826BBE2-8121-4B64-A40C-6C53C3F06C99}
+	EndGlobalSection
+EndGlobal

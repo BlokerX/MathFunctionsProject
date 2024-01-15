@@ -146,5 +146,7 @@
         {
             return new LinearFunction(2 * a, b);
         }
+
+        public Polynomial ToPolynomial() => new Polynomial([a, b, c]);
     }
 }

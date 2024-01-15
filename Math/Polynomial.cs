@@ -10,7 +10,7 @@
         // [0]x^4 [1]x^3 [2]x^2 [3]x [4]x^0 (the last one equals 1)
         public float[] a { get; private set; }
 
-        public float f(float x)
+        public float F(float x)
         {
             float temp = 0;
             float tempX = 1;

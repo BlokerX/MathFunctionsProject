@@ -1,4 +1,4 @@
-﻿namespace BlokMath
+﻿namespace BlokMath.Shapes
 {
     internal class Triangle
     {

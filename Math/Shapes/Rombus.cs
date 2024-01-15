@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlokMath
+namespace BlokMath.Shapes
 {
-    internal class RegularPolygon
+    internal class Rombus
     {
         public decimal a { get; private set; }
-        public decimal r { get; private set; }
+
+        public decimal e { get; private set; }
+        public decimal f { get; private set; }
     }
 }

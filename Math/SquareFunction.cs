@@ -1,4 +1,6 @@
-﻿namespace BlokMath
+﻿using BlokMath.Shapes;
+
+namespace BlokMath
 {
     public class SquareFunction
     {

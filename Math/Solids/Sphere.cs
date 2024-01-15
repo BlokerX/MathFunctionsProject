@@ -13,5 +13,8 @@ namespace BlokMath.Solids
 
         public Circle CircleCrossSection { get; private set; }
         public decimal r { get => CircleCrossSection.r; }
+
+        public decimal SurfaceArea() => 4 * OtherFunctions.PI * r * r;
+        public decimal Volume() => r * r * 4 / 3 * OtherFunctions.PI;
     }
 }

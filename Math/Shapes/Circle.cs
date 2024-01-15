@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BlokMath.Shapes
+﻿namespace BlokMath.Shapes
 {
     public class Circle
     {
@@ -14,5 +8,9 @@ namespace BlokMath.Shapes
         }
 
         public decimal r { get; private set; }
+
+        public decimal Area() => r * OtherFunctions.PI * OtherFunctions.PI;
+
+        public decimal Perimeter() => 2 * r * OtherFunctions.PI;
     }
 }

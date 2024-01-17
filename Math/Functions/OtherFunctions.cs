@@ -1,4 +1,4 @@
-﻿namespace BlokMath
+﻿namespace BlokMath.Functions
 {
     public static class OtherFunctions
     {
@@ -15,7 +15,7 @@
                 return a;
             }
             else
-                return (decimal)System.Math.Pow(double.Parse(a.ToString()), double.Parse(n.ToString()));
+                return (decimal)Math.Pow(double.Parse(a.ToString()), double.Parse(n.ToString()));
         }
 
         public static long Factorial(uint n)

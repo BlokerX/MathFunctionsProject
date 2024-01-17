@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlokMath.Shapes
+namespace BlokMath.Geometry.Shapes
 {
     internal class Trapezoid
     {

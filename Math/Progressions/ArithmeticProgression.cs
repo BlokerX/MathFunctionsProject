@@ -1,4 +1,4 @@
-﻿namespace BlokMath
+﻿namespace BlokMath.Progressions
 {
     public class ArithmeticProgression
     {
@@ -13,15 +13,15 @@
 
         public decimal? a(uint n)
         {
-            if(n >= 1)
-            return a1 + ((n - 1) * r);
+            if (n >= 1)
+                return a1 + (n - 1) * r;
             return null;
         }
 
         public decimal? S(uint n)
         {
-            if(n >= 1)
-            return ((a1 + a(n)) / 2) * n;
+            if (n >= 1)
+                return (a1 + a(n)) / 2 * n;
             return null;
         }
 

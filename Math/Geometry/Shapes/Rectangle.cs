@@ -1,4 +1,4 @@
-﻿namespace BlokMath.Shapes
+﻿namespace BlokMath.Geometry.Shapes
 {
     public class Rectangle
     {

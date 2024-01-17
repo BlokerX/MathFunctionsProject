@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using BlokMath;
+using BlokMath.Functions;
 
 Console.WriteLine("Podaj parametry:");
 
@@ -28,8 +29,8 @@ Console.WriteLine("c = " + squareFunction.c);
 Console.WriteLine("p = "+ squareFunction.p);
 Console.WriteLine("q = "+ squareFunction.q);
 
-Console.WriteLine("Δ = " + squareFunction.Delta);
-Console.WriteLine("√Δ= " + squareFunction.DeltaSqrt);
+Console.WriteLine("Δdelta = " + squareFunction.Delta);
+Console.WriteLine("√Δdeltasqrt= " + squareFunction.DeltaSqrt);
 
 Console.WriteLine("x1 = " + squareFunction.x1);
 Console.WriteLine("x2 = " + squareFunction.x2);

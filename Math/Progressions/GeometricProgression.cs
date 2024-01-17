@@ -1,11 +1,11 @@
-﻿namespace BlokMath
+﻿namespace BlokMath.Progressions
 {
     internal class GeometricProgression
     {
         public GeometricProgression(decimal a1, decimal r)
         {
             this.a1 = a1;
-            this.q = r;
+            q = r;
         }
 
         public decimal a1 { get; private set; }
@@ -28,7 +28,7 @@
 
         public decimal? S(uint n)
         {
-            if(n == 0) return null;
+            if (n == 0) return null;
 
             decimal qTemp = q;
             for (int i = 1; i < n; i++)
@@ -41,7 +41,7 @@
 
         public decimal an(decimal am, decimal ao)
         {
-            return (decimal)System.Math.Sqrt(Double.Parse(am.ToString()) * Double.Parse(ao.ToString()));
+            return (decimal)Math.Sqrt(double.Parse(am.ToString()) * double.Parse(ao.ToString()));
         }
     }
 }

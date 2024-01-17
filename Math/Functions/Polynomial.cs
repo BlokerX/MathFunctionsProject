@@ -1,4 +1,4 @@
-﻿namespace BlokMath
+﻿namespace BlokMath.Functions
 {
     public class Polynomial
     {
@@ -29,7 +29,7 @@
 
             int tempXPow = a.Length - 1;
             decimal[] tab = new decimal[a.Length - 1];
-            for (int i=0; i < tab.Length; i++)
+            for (int i = 0; i < tab.Length; i++)
             {
                 tab[i] = a[i] * tempXPow;
                 tempXPow--;

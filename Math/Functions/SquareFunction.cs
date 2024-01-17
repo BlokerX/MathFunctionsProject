@@ -1,6 +1,6 @@
-﻿using BlokMath.Shapes;
+﻿using BlokMath.Geometry.Shapes;
 
-namespace BlokMath
+namespace BlokMath.Functions
 {
     public class SquareFunction
     {
@@ -13,16 +13,16 @@ namespace BlokMath
             this.b = b;
             this.c = c;
 
-            this.W = new Point(((-b) / 2 * a), ((-Delta) / 4 * b));
+            W = new Point(-b / 2 * a, -Delta / 4 * b);
         }
 
         public void SquareFunctionBuildAsCanonical(decimal a, decimal p, decimal q)
         {
             this.a = a;
-            this.W = new Point(p, q);
+            W = new Point(p, q);
 
-            this.b = -2 * a * p;
-            this.c = (-(b * b) + (-4 * a * q)) / (-4 * a);
+            b = -2 * a * p;
+            c = (-(b * b) + -4 * a * q) / (-4 * a);
         }
 
         public void SquareFunctionBuildAsFactored(decimal a, decimal x1, decimal x2)
@@ -31,10 +31,10 @@ namespace BlokMath
             //this.x1 = x1;
             //this.x2 = x2;
 
-            this.b = -(x1 + x2) * a;
-            this.c = (x1 * x2) * a;
+            b = -(x1 + x2) * a;
+            c = x1 * x2 * a;
 
-            this.W = new Point(((-b) / 2 * a), ((-Delta) / 4 * b));
+            W = new Point(-b / 2 * a, -Delta / 4 * b);
         }
 
         public void SquareFunctionBuildAsFactored(decimal a, decimal x0)
@@ -87,7 +87,7 @@ namespace BlokMath
             get
             {
                 if (Delta == 0)
-                    return (-b) / (2 * a);
+                    return -b / (2 * a);
                 //or
                 //if(q == 0)
                 return null;
@@ -115,12 +115,12 @@ namespace BlokMath
 
         #endregion
 
-        public decimal Delta { get => (b * b) - (4 * a * c); }
-        public decimal? DeltaSqrt { get => (decimal?)System.Math.Sqrt((double)Delta); }
+        public decimal Delta { get => b * b - 4 * a * c; }
+        public decimal? DeltaSqrt { get => (decimal?)Math.Sqrt((double)Delta); }
 
         public decimal F_GeneralForm(decimal x)
         {
-            return a * (x * x) + b * x + c;
+            return a * x * x + b * x + c;
         }
 
         public decimal F_CanonicalForm(decimal x)

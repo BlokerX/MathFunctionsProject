@@ -1,9 +1,10 @@
-﻿using BlokMath.Shapes;
+﻿using BlokMath.Functions;
+using BlokMath.Geometry.Shapes;
 
-namespace BlokMath.Solids
+namespace BlokMath.Geometry.Solids
 {
     public class Sphere
-    {
+    { //todo repair this
         public Sphere(Circle circleCrossSection)
         {
             CircleCrossSection = circleCrossSection;

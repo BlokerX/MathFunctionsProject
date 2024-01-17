@@ -1,4 +1,4 @@
-﻿namespace BlokMath.Shapes
+﻿namespace BlokMath.Geometry.Shapes
 {
     public class Square : Rectangle
     {
@@ -7,7 +7,7 @@
         public new decimal a
         {
             get => base.a;
-            protected set => base.a = base.b = value;
+            protected set => base.a = b = value;
         }
     }
 }

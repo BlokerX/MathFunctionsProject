@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathFunctionsProject", "Mat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlokMath", "Math\BlokMath.csproj", "{5A87D64A-3A26-42DF-93A7-4F19FBD86861}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperCalculatorMauiApp", "SuperCalculatorMauiApp\SuperCalculatorMauiApp.csproj", "{1A91005B-183B-4CE6-9DEF-383D31D42DD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A87D64A-3A26-42DF-93A7-4F19FBD86861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A91005B-183B-4CE6-9DEF-383D31D42DD0}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SuperCalculatorMauiApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SuperCalculatorMauiApp.Pages"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    Title="SuperCalculatorMauiApp"
+    Shell.NavBarIsVisible="False"
+    Shell.TabBarIsVisible="False">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+            Title="Welcome"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Standart Mode"
+            ContentTemplate="{DataTemplate local:StandardCalculatorPage}"
+            Route="StandardCalculatorPage" />
+
+        <ShellContent
+            Title="Scientific Mode"
+            ContentTemplate="{DataTemplate local:ScientificCalculatorPage}"
+            Route="ScientificCalculatorPage" />
+
+        <ShellContent
+            Title="Programmer Mode"
+            ContentTemplate="{DataTemplate local:ProgrammerCalculatorPage}"
+            Route="ProgrammerCalculatorPage" />
+
+        <ShellContent
+            Title="Graphing Mode"
+            ContentTemplate="{DataTemplate local:GraphingCalculatorPage}"
+            Route="GraphingCalculatorPage" />
+
+        <ShellContent
+            Title="Super Mode"
+            ContentTemplate="{DataTemplate local:SuperCalculatorPage}"
+            Route="SuperCalculatorPage" />
+
+    </FlyoutItem>
+
+</Shell>

@@ -10,6 +10,7 @@
         public decimal b_h { get; private set; }
         public decimal c_h { get; private set; }
 
+        //a=Sqrt((c*c)-(b*b))
 
     }
 }

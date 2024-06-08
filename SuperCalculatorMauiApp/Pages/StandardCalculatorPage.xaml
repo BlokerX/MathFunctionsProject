@@ -3,10 +3,137 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuperCalculatorMauiApp.Pages.StandardCalculatorPage"
              Title="StandardCalculatorPage">
-    <VerticalStackLayout>
+
+    <VerticalStackLayout 
+        HorizontalOptions="Center"
+        Spacing="5">
+
         <Label 
             Text="Standard mode"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry 
+            x:Name="CalculatorDisplay"
+            Text="0"
+            FlowDirection="RightToLeft"/>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button
+                Text="√"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SqrtButton_Clicked"/>
+            <Button Text="CE"
+                WidthRequest="30"
+                CornerRadius="0"
+                BorderColor="Red"
+                BorderWidth="1"
+                Clicked="ClearEntryButton_Clicked"/>
+            <Button Text="C"
+                CornerRadius="0"
+                BorderColor="OrangeRed"
+                BorderWidth="1"
+                Clicked="ClearButton_Clicked"/>
+            <Button Text="/"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="7"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="8"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="9"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="*"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="4"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="5"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="6"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="-"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="1"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="2"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="3"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="+"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="±"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="PlusMinusButton_Clicked"/>
+            <Button Text="0"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="."
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="DecimalButton_Clicked"/>
+            <Button Text="="
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="EqualButton_Clicked"/>
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
 </ContentPage>

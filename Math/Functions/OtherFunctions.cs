@@ -17,6 +17,11 @@
             else
                 return (decimal)Math.Pow(double.Parse(a.ToString()), double.Parse(n.ToString()));
         }
+        
+        public static decimal Sqrt(decimal a)
+        {
+            return decimal.Parse(Math.Sqrt(double.Parse(a.ToString())).ToString());
+        }
 
         public static long Factorial(uint n)
         {

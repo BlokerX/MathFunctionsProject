@@ -11,7 +11,7 @@
         {
             var b = (Button)sender;
             b.Text = "😊 Thank you for the donation 😊";
-            b.BackgroundColor = Microsoft.Maui.Graphics.Color.FromRgb(246, 250, 185);
+            b.BackgroundColor = Color.FromRgb(246, 250, 185);
 
             try
             {
@@ -21,7 +21,7 @@
             catch /*(Exception ex)*/
             {
                 b.Text = "Somethink has gone wrong, try again";
-                b.BackgroundColor = Microsoft.Maui.Graphics.Color.FromRgb(255, 100, 100);
+                b.BackgroundColor = Color.FromRgb(255, 100, 100);
             }
         }
     }

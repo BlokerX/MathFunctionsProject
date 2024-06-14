@@ -3,6 +3,8 @@
     public static class OtherFunctions
     {
         public const decimal PI = 3.141592653589793238462643383279502884M;
+        public const decimal EulerNumber = 2.71828182845904523536M;
+
         public static decimal AbsoluteValue(decimal x) => x > 0 ? x : -x;
 
         public static decimal Pow(decimal a, decimal n)

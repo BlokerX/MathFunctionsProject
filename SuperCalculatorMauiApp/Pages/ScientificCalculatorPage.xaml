@@ -3,10 +3,239 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuperCalculatorMauiApp.Pages.ScientificCalculatorPage"
              Title="ScientificCalculatorPage">
-    <VerticalStackLayout>
+
+    <VerticalStackLayout 
+        HorizontalOptions="Center"
+        Spacing="5">
+
         <Label 
             Text="Scientific mode"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Entry 
+            x:Name="CalculatorDisplay"
+            Text="0"
+            FlowDirection="RightToLeft"/>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button
+                Text="√"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SqrtButton_Clicked"/>
+            <Button Text="CE"
+                WidthRequest="30"
+                CornerRadius="0"
+                BorderColor="Red"
+                BorderWidth="1"
+                Clicked="ClearEntryButton_Clicked"/>
+            <Button Text="C"
+                CornerRadius="0"
+                BorderColor="OrangeRed"
+                BorderWidth="1"
+                Clicked="ClearButton_Clicked"/>
+            <Button Text="/"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="7"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="8"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="9"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="*"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="4"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="5"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="6"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="-"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="1"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="2"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="3"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="+"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="OperationButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Spacing="5">
+            <Button Text="±"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="PlusMinusButton_Clicked"/>
+            <Button Text="0"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="NumberButton_Clicked"/>
+            <Button Text="."
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="DecimalButton_Clicked"/>
+            <Button Text="="
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="EqualButton_Clicked"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Button Text="π"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="PIButton_Clicked"/>
+            <Button Text="e"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="EulerNumberButton_Clicked"/>
+            <Button Text="|x|"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="AbsoluteButton_Clicked"/>
+            <Button Text="n!"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="FactorialButton_Clicked"/>
+            <Button Text="1/x"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="InversionButton_Clicked"/>
+            <Button Text="x²"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SquareButton_Clicked"/>
+            <Button Text="x³"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CubeButton_Clicked"/>
+            <Button Text="√x"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SquareRootButton_Clicked"/>
+            <Button Text="∛x"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CubeRootButton_Clicked"/>
+            <Button Text="log"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogButton_Clicked"/>
+            <Button Text="logxY"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogxYButton_Clicked"/>
+            <Button Text="ln"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogNaturalButton_Clicked"/>
+            <Button Text="x^y"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="XToYPowButton_Clicked"/>
+            <Button Text="y√x"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="PierwiastekStopniaY_z_X_Button_Clicked"/>
+            <Button Text="e^x"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="EulerNumberToXPowButton_Clicked"/>
+            <Button Text="sin"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SinButton_Clicked"/>
+            <Button Text="cos"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CosButton_Clicked"/>
+            <Button Text="tg"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="TgButton_Clicked"/>
+            <Button Text="ctg"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CtgButton_Clicked"/>
+            <Button Text="hyp"
+                CornerRadius="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="HypButton_Clicked"/>
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
 </ContentPage>

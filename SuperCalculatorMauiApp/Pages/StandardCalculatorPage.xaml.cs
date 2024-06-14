@@ -56,11 +56,11 @@ public partial class StandardCalculatorPage : ContentPage
             CalculatorDisplay.Text = "-" + CalculatorDisplay.Text;
         }
 
-        if(operation == CalculatorOperationType.None)
+        if (isSecondNumberDefault && firstNumber != secondNumber && firstNumber != 0)
         {
             firstNumber = decimal.Parse(CalculatorDisplay.Text);
         }
-        else
+        else if (secondNumber != 0)
         {
             secondNumber = decimal.Parse(CalculatorDisplay.Text);
         }

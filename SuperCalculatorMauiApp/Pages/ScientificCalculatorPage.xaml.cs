@@ -114,7 +114,7 @@ public partial class ScientificCalculatorPage : ContentPage
 
     private void SqrtButton_Clicked(object sender, EventArgs e)
     {
-        SetCurrentNumber(OtherFunctions.Sqrt(decimal.Parse(CalculatorDisplay.Text)));
+        SetCurrentNumber(OtherFunctions.SquareRoot(decimal.Parse(CalculatorDisplay.Text)));
     }
 
     private void EqualButton_Clicked(object sender, EventArgs e)
@@ -218,26 +218,25 @@ public partial class ScientificCalculatorPage : ContentPage
     private void SquareButton_Clicked(object sender, EventArgs e)
     {
         if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
-            SetCurrentNumber(OtherFunctions.Pow(result, 2));
+            SetCurrentNumber(OtherFunctions.Power(result, 2));
     }
 
     private void CubeButton_Clicked(object sender, EventArgs e)
     {
         if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
-            SetCurrentNumber(OtherFunctions.Pow(result, 3));
+            SetCurrentNumber(OtherFunctions.Power(result, 3));
     }
 
     private void SquareRootButton_Clicked(object sender, EventArgs e)
     {
         if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
-            SetCurrentNumber(OtherFunctions.Sqrt(result));
+            SetCurrentNumber(OtherFunctions.SquareRoot(result));
     }
 
     private void CubeRootButton_Clicked(object sender, EventArgs e)
     {
-        //todo cube root
-        //if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
-        //    SetCurrentNumber(OtherFunctions.Sqrt(result));
+        if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
+            SetCurrentNumber(OtherFunctions.CubeRoot(result));
     }
 
     private void LogButton_Clicked(object sender, EventArgs e)
@@ -266,12 +265,14 @@ public partial class ScientificCalculatorPage : ContentPage
     {
         // y√x
         // todo pierwiastek
+        if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
+            OtherFunctions.NthRoot(result, 2);
     }
 
     private void EulerNumberToXPowButton_Clicked(object sender, EventArgs e)
     {
         if (decimal.TryParse(CalculatorDisplay.Text, out decimal result))
-            SetCurrentNumber(OtherFunctions.Pow(OtherFunctions.EulerNumber, result));
+            SetCurrentNumber(OtherFunctions.Power(OtherFunctions.EulerNumber, result));
     }
 
     /* Trigonometry */

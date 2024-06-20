@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SuperCalculatorMauiApp.Pages.ProgrammerCalculatorPage"
              Title="ProgrammerCalculatorPage">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
         <Label 
             Text="Programmer mode"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <HorizontalStackLayout>
+            <Label Text="HEX"/>
+            <Entry x:Name="hex_entry"
+               TextChanged="hex_entry_TextChanged"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="DEC"/>
+            <Entry x:Name="dec_entry"
+               TextChanged="dec_entry_TextChanged"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="OCT"/>
+            <Entry x:Name="oct_entry"
+               TextChanged="oct_entry_TextChanged"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="BIN"/>
+            <Entry x:Name="bin_entry"
+               TextChanged="bin_entry_TextChanged"/>
+        </HorizontalStackLayout>
+
     </VerticalStackLayout>
 </ContentPage>

@@ -109,12 +109,12 @@ public partial class StandardCalculatorPage : ContentPage
     {
         if (operation == CalculatorOperationType.None)
         {
-            firstNumber = OtherFunctions.Sqrt(decimal.Parse(CalculatorDisplay.Text));
+            firstNumber = OtherFunctions.SquareRoot(decimal.Parse(CalculatorDisplay.Text));
             CalculatorDisplay.Text = firstNumber.ToString();
         }
         else
         {
-            secondNumber = OtherFunctions.Sqrt(decimal.Parse(CalculatorDisplay.Text));
+            secondNumber = OtherFunctions.SquareRoot(decimal.Parse(CalculatorDisplay.Text));
             CalculatorDisplay.Text = secondNumber.ToString();
         }
     }

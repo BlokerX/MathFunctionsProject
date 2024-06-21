@@ -11,9 +11,17 @@
                 HorizontalOptions="Center"
                 Text="Super mode"
                 VerticalOptions="Center" />
-            <controls:SquareView Margin="10"
-                                 VerticalOptions="Center"
-                                 HorizontalOptions="Fill"/>
+
+            <controls:SquareView
+                Margin="10"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
+            <controls:RectangleView
+                Margin="10"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

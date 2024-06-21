@@ -12,7 +12,7 @@ namespace BlokMath.Geometry.Shapes
             protected set => base.a = b = value;
         }
 
-        public void Set_a(decimal a)
+        public new void Set_a(decimal a)
         {
             this.a = a;
         }

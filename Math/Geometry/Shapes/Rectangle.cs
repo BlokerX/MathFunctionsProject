@@ -11,7 +11,17 @@
             this.b = b;
         }
 
-        public decimal d => (decimal)Math.Sqrt(double.Parse((a * a * 2).ToString()));
+        public void Set_a(decimal a)
+        {
+            this.a = a;
+        }
+
+        public void Set_b(decimal b)
+        {
+            this.b = b;
+        }
+
+        public decimal d => (decimal)Math.Sqrt(double.Parse((a * a + b * b).ToString()));
 
         public decimal Area => a * b;
 

@@ -9,13 +9,17 @@ namespace SuperCalculatorMauiApp.Controls
             InitializeComponent();
 
             // set default values
+            UpdateObjectValues();
+        }
+
+        private void UpdateObjectValues()
+        {
             isChanging = true;
             a_Entry.Text = _square.a.ToString();
             d_Entry.Text = _square.d.ToString();
             Circumference_Entry.Text = _square.Circumference.ToString();
             Area_Entry.Text = _square.Area.ToString();
             isChanging = false;
-
         }
 
         private bool isChanging = false;
@@ -26,56 +30,48 @@ namespace SuperCalculatorMauiApp.Controls
         {
             if (isChanging)
                 return;
-            isChanging = true;
 
             if(decimal.TryParse(((Entry)sender).Text, out decimal result))
             {
-                //todo zamiana wartosci
+                _square.Set_a(result);
+                UpdateObjectValues();
             }
-
-            isChanging = false;
         }
 
         private void d_Entry_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (isChanging)
                 return;
-            isChanging = true;
 
             if (decimal.TryParse(((Entry)sender).Text, out decimal result))
             {
-                //todo zamiana wartosci
+                _square.Set_d(result);
+                UpdateObjectValues();
             }
-
-            isChanging = false;
         }
 
         private void Circumference_Entry_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (isChanging)
                 return;
-            isChanging = true;
 
             if (decimal.TryParse(((Entry)sender).Text, out decimal result))
             {
-                //todo zamiana wartosci
+                _square.Set_Circumference(result);
+                UpdateObjectValues();
             }
-
-            isChanging = false;
         }
 
         private void Area_Entry_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (isChanging)
                 return;
-            isChanging = true;
 
             if (decimal.TryParse(((Entry)sender).Text, out decimal result))
             {
-                //todo zamiana wartosci
+                _square.Set_Area(result);
+                UpdateObjectValues();
             }
-
-            isChanging = false;
         }
     }
 }

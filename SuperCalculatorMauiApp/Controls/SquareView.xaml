@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="SuperCalculatorMauiApp.Controls.SquareView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
+    xmlns:local="clr-namespace:SuperCalculatorMauiApp.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+
+        <Frame
+            BackgroundColor="Transparent"
+            BorderColor="Azure">
+
+            <Grid
+                ColumnSpacing="10"
+                RowSpacing="10">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <HorizontalStackLayout
+                    Grid.Row="0"
+                    Grid.Column="0">
+
+                    <Label
+                        Margin="0,0,5,0"
+                        FontSize="Title"
+                        HorizontalOptions="Center"
+                        IsVisible="Visible"
+                        Text="Object type:"
+                        VerticalOptions="Center" />
+                    <Label
+                        FontSize="Title"
+                        HorizontalOptions="Center"
+                        Text="Square"
+                        TextColor="Purple"
+                        VerticalOptions="Center" />
+
+                </HorizontalStackLayout>
+
+                <Label
+                    Grid.Row="0" Grid.Column="1"
+                    FontSize="Large"
+                    FontFamily="Arial"
+                    BackgroundColor="#AAFF0000"
+                    HorizontalOptions="End"
+                    Padding="10,0"
+                    HorizontalTextAlignment="Center"
+                    Text="X"/>
+
+                <Frame
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Azure">
+
+                    <Grid
+                        Margin="5"
+                        ColumnSpacing="1"
+                        RowSpacing="10">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="1*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="5"
+                            FontSize="Small"
+                            HorizontalTextAlignment="End"
+                            Text="a"
+                            VerticalOptions="Center"/>
+                        <Entry
+                            x:Name="a_Entry"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            FontSize="Medium"
+                            Keyboard="Numeric"
+                            TextChanged="a_Entry_TextChanged"/>
+
+                        <Label
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Margin="5"
+                            FontSize="Small"
+                            HorizontalTextAlignment="End"
+                            Text="d"
+                            VerticalOptions="Center" />
+                        <Entry
+                            x:Name="d_Entry"
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            FontSize="Medium"
+                            Keyboard="Numeric"
+                            TextChanged="d_Entry_TextChanged"/>
+
+                        <Label
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Margin="5"
+                            FontSize="Small"
+                            HorizontalTextAlignment="End"
+                            Text="Circumference"
+                            VerticalOptions="Center" />
+                        <Entry
+                            x:Name="Circumference_Entry"
+                            Grid.Row="2"
+                            Grid.Column="1"
+                            FontSize="Small"
+                            Keyboard="Numeric" 
+                            TextChanged="Circumference_Entry_TextChanged"/>
+
+                        <Label
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Margin="5"
+                            FontSize="Medium"
+                            HorizontalTextAlignment="End"
+                            Text="Area"
+                            VerticalOptions="Center" />
+                        <Entry
+                            x:Name="Area_Entry"
+                            Grid.Row="3"
+                            Grid.Column="1"
+                            FontSize="Medium"
+                            Keyboard="Numeric"
+                            TextChanged="Area_Entry_TextChanged"/>
+
+                    </Grid>
+
+                </Frame>
+
+                <Frame
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="Azure"
+                    BorderColor="Azure">
+                    <Image
+                        Margin="10"
+                        HeightRequest="200"
+                        Source="https://szaloneliczby.pl/rys/matematyka-122.png" />
+                </Frame>
+
+                <Frame
+                    Grid.Row="2"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="Transparent"
+                    BorderColor="Azure">
+
+                    <Label Text="transfer to for example CUBE" />
+
+                </Frame>
+
+            </Grid>
+
+        </Frame>
+
+    </ContentView.Content>
+</ContentView>

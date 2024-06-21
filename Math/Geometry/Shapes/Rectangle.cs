@@ -15,6 +15,6 @@
 
         public decimal Area => a * b;
 
-        public decimal Perimeter => (a + b) * 2;
+        public decimal Circumference => (a + b) * 2;
     }
 }

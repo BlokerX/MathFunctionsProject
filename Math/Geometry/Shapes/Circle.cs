@@ -13,6 +13,6 @@ namespace BlokMath.Geometry.Shapes
 
         public decimal Area => r * r * OtherFunctions.PI;
 
-        public decimal Perimeter => 2 * r * OtherFunctions.PI;
+        public decimal Circumference => 2 * r * OtherFunctions.PI;
     }
 }

@@ -13,12 +13,22 @@
                 VerticalOptions="Center" />
 
             <controls:SquareView
-                Margin="10"
+                Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
 
             <controls:RectangleView
-                Margin="10"
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+            
+            <controls:CircleView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+            
+            <controls:TriangleView
+                Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
 

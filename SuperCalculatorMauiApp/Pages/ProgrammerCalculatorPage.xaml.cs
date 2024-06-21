@@ -71,14 +71,14 @@ public partial class ProgrammerCalculatorPage : ContentPage
 
         isChanging = true;
 
-        int number = 0;
-        if (int.TryParse(((Entry)sender).Text, out number))
-        {
-            dec_entry.Text = NumberSystems.HexToDecimal(number.ToString()).ToString();
-            oct_entry.Text = NumberSystems.HexToOctal(number.ToString());
-            bin_entry.Text = NumberSystems.HexToBinary(number.ToString());
-        }
-        else number = 0;
+        string number = ((Entry)sender).Text;
+
+        if(number=="")
+            number = "0";
+
+        dec_entry.Text = NumberSystems.HexToDecimal(number).ToString();
+        oct_entry.Text = NumberSystems.HexToOctal(number);
+        bin_entry.Text = NumberSystems.HexToBinary(number);
 
         isChanging = false;
     }

@@ -5,12 +5,26 @@
         // Decimal to other bases
         public static string DecimalToBinary(int number)
         {
-            return Convert.ToString(number, 2);
+            try
+            {
+                return Convert.ToString(number, 2);
+            }
+            catch
+            {
+                return "0";
+            }
         }
 
         public static string DecimalToOctal(int number)
         {
-            return Convert.ToString(number, 8);
+            try
+            {
+                return Convert.ToString(number, 8);
+            }
+            catch
+            {
+                return "0";
+            }
         }
 
         public static string DecimalToHex(int number)
@@ -21,7 +35,14 @@
         // Binary to other bases
         public static int BinaryToDecimal(string binary)
         {
-            return Convert.ToInt32(binary, 2);
+            try
+            {
+                return Convert.ToInt32(binary, 2);
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         public static string BinaryToOctal(string binary)
@@ -39,7 +60,14 @@
         // Octal to other bases
         public static int OctalToDecimal(string octal)
         {
-            return Convert.ToInt32(octal, 8);
+            try
+            {
+                return Convert.ToInt32(octal, 8);
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         public static string OctalToBinary(string octal)
@@ -57,7 +85,15 @@
         // Hex to other bases
         public static int HexToDecimal(string hex)
         {
-            return Convert.ToInt32(hex, 16);
+            try
+            {
+                return Convert.ToInt32(hex, 16);
+            }
+            catch
+            {
+                //todo throw new Exception("Hex number must contain only signs 0-9 and A-F.");
+                return 0;
+            }
         }
 
         public static string HexToBinary(string hex)

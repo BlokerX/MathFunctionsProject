@@ -100,7 +100,7 @@ namespace BlokMath.Functions
             {
                 if (Delta > 0)
                     return (-b - DeltaSqrt) / (2 * a);
-                else return x0;
+                else return null;
             }
         }
         public decimal? x2
@@ -109,14 +109,23 @@ namespace BlokMath.Functions
             {
                 if (Delta > 0)
                     return (-b + DeltaSqrt) / (2 * a);
-                else return x0;
+                else return null;
             }
         }
 
         #endregion
 
         public decimal Delta { get => b * b - 4 * a * c; }
-        public decimal? DeltaSqrt { get => (decimal?)Math.Sqrt((double)Delta); }
+        public decimal? DeltaSqrt
+        {
+            get
+            {
+                if (Delta < 0)
+                    return null;
+
+                return OtherFunctions.SquareRoot(Delta);
+            }
+        }
 
         public decimal F_GeneralForm(decimal x)
         {
@@ -136,6 +145,54 @@ namespace BlokMath.Functions
         }
 
         public decimal F(decimal x) => F_GeneralForm(x);
+
+        public void Set_a(decimal a)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsGeneral(a, b, c);
+        }
+
+        public void Set_b(decimal b)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsGeneral(a, b, c);
+        }
+
+        public void Set_c(decimal c)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsGeneral(a, b, c);
+        }
+
+        public void Set_p(decimal p)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsCanonical(a, p, q);
+        }
+
+        public void Set_q(decimal q)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsCanonical(a, p, q);
+        }
+
+        public void Set_x0(decimal x0)
+        {
+            if (a != 0)
+                SquareFunctionBuildAsFactored(a, x0);
+        }
+
+        public void Set_x1(decimal x1)
+        {
+            if (a != 0 && x2 != null)
+                SquareFunctionBuildAsFactored(a, x1, (decimal)x2);
+        }
+
+        public void Set_x2(decimal x2)
+        {
+            if (a != 0 && x1 != null)
+                SquareFunctionBuildAsFactored(a, (decimal)x1, x2);
+        }
 
         public bool IsHaveMaximum { get { if (a < 0) return true; return false; } }
         public bool IsHaveMinimum { get { if (a > 0) return true; return false; } }

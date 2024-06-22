@@ -37,6 +37,11 @@
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
 
+            <controls:SquareFunctionView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

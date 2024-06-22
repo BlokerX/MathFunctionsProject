@@ -21,13 +21,18 @@
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
-            
+
             <controls:CircleView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
-            
+
             <controls:TriangleView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
+            <controls:LinearFunctionView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />

@@ -70,6 +70,9 @@
 	  <MauiXaml Update="Controls\CircleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Controls\LinearFunctionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Controls\RectangleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

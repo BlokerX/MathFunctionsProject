@@ -262,7 +262,7 @@
                             Grid.Column="1"
                             FontSize="Medium"
                             Keyboard="Numeric"
-                            TextChanged="x1_Entry_TextChanged"/>
+                            IsEnabled="False"/>
 
                         <Label
                             Grid.Row="11"
@@ -278,7 +278,7 @@
                             Grid.Column="1"
                             FontSize="Medium"
                             Keyboard="Numeric"
-                            TextChanged="x2_Entry_TextChanged"/>
+                            IsEnabled="False"/>
 
                     </Grid>
 

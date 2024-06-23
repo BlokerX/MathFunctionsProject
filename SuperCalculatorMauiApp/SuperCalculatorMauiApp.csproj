@@ -67,7 +67,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Controls\GeometricProgressionView.xaml.cs">
+	    <DependentUpon>GeometricProgressionView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Controls\ArithmeticProgressionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Controls\CircleView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\GeometricProgressionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\LinearFunctionView.xaml">

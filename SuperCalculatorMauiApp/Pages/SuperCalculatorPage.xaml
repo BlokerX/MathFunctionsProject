@@ -6,7 +6,9 @@
     xmlns:controls="clr-namespace:SuperCalculatorMauiApp.Controls"
     Title="SuperCalculatorPage">
     <ScrollView>
-        <VerticalStackLayout Margin="100,0">
+        <VerticalStackLayout
+            Margin="10,0"
+            HorizontalOptions="Fill">
             <Label
                 HorizontalOptions="Center"
                 Text="Super mode"
@@ -38,6 +40,16 @@
                 VerticalOptions="Center" />
 
             <controls:SquareFunctionView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
+            <controls:ArithmeticProgressionView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
+            <controls:GeometricProgressionView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />

@@ -10,7 +10,7 @@ namespace SuperCalculatorMauiApp.Controls
             InitializeComponent();
 
             //todo zmienic
-            _squareFunction.SquareFunctionBuildAsGeneral(1,0,0);
+            _squareFunction.SquareFunctionBuildAsGeneral(1, 0, 0);
 
             // set default values
             _point = new Point(0, _squareFunction.c);
@@ -31,9 +31,18 @@ namespace SuperCalculatorMauiApp.Controls
             Delta_Entry.Text = _squareFunction.Delta.ToString();
             DeltaSquareRoot_Entry.Text = _squareFunction.DeltaSqrt.ToString();
 
-            x0_Entry.Text = _squareFunction.x0.ToString();
-            x1_Entry.Text = _squareFunction.x1.ToString();
-            x2_Entry.Text = _squareFunction.x2.ToString();
+            if(x0_Entry.Text != x0_Entry.ToString())
+            {
+                x0_Entry.Text = _squareFunction.x0.ToString();
+            }
+            if(x1_Entry.Text != x1_Entry.ToString())
+            {
+                x1_Entry.Text = _squareFunction.x1.ToString();
+            }
+            if(x2_Entry.Text != x2_Entry.ToString())
+            {
+                x2_Entry.Text = _squareFunction.x2.ToString();
+            }
 
             _point.y = _squareFunction.F(_point.x);
 
@@ -139,28 +148,28 @@ namespace SuperCalculatorMauiApp.Controls
             }
         }
 
-        private void x1_Entry_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (isChanging)
-                return;
+        //private void x1_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    if (isChanging)
+        //        return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
-            {
-                _squareFunction.Set_x1(result);
-                UpdateObjectValues();
-            }
-        }
+        //    if (int.TryParse(((Entry)sender).Text, out int result))
+        //    {
+        //        _squareFunction.Set_x1(result);
+        //        UpdateObjectValues();
+        //    }
+        //}
 
-        private void x2_Entry_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (isChanging)
-                return;
+        //private void x2_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    if (isChanging)
+        //        return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
-            {
-                _squareFunction.Set_x2(result);
-                UpdateObjectValues();
-            }
-        }
+        //    if (int.TryParse(((Entry)sender).Text, out int result))
+        //    {
+        //        _squareFunction.Set_x2(result);
+        //        UpdateObjectValues();
+        //    }
+        //}
     }
 }

@@ -2,19 +2,19 @@
 {
     public class ArithmeticProgression
     {
-        public ArithmeticProgression(decimal a1, decimal r)
+        public ArithmeticProgression(decimal a1, decimal d)
         {
             this.a1 = a1;
-            this.r = r;
+            this.d = d;
         }
 
         public decimal a1 { get; private set; }
-        public decimal r { get; private set; }
+        public decimal d { get; private set; }
 
         public decimal? a(uint n)
         {
             if (n >= 1)
-                return a1 + (n - 1) * r;
+                return a1 + (n - 1) * d;
             return null;
         }
 
@@ -28,6 +28,16 @@
         public decimal? an(decimal am, decimal ao)
         {
             return (am + ao) / 2;
+        }
+
+        public void Set_d(decimal d)
+        {
+            this.d = d;
+        }
+        
+        public void Set_a1(decimal a1)
+        {
+            this.a1 = a1;
         }
     }
 }

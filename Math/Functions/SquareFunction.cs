@@ -32,7 +32,7 @@ namespace BlokMath.Functions
             //this.x2 = x2;
 
             b = -(x1 + x2) * a;
-            c = x1 * x2 * a;
+            c = (x1 * x2) * a;
 
             W = new Point(-b / 2 * a, -Delta / 4 * b);
         }
@@ -100,7 +100,7 @@ namespace BlokMath.Functions
             {
                 if (Delta > 0)
                     return (-b - DeltaSqrt) / (2 * a);
-                else return null;
+                else return x0;
             }
         }
         public decimal? x2
@@ -109,7 +109,7 @@ namespace BlokMath.Functions
             {
                 if (Delta > 0)
                     return (-b + DeltaSqrt) / (2 * a);
-                else return null;
+                else return x0;
             }
         }
 

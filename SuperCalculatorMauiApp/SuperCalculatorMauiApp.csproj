@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>SuperCalculatorMauiApp</ApplicationTitle>
+		<ApplicationTitle>Super Calculator by BlokerX</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.supercalculatormauiapp</ApplicationId>
@@ -86,6 +86,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\RectangleView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\RombusView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\SquareFunctionView.xaml">

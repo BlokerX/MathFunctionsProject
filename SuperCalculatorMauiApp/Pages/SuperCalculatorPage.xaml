@@ -9,6 +9,7 @@
         <VerticalStackLayout
             Margin="10,0"
             HorizontalOptions="Fill">
+
             <Label
                 HorizontalOptions="Center"
                 Text="Super mode"
@@ -50,6 +51,11 @@
                 VerticalOptions="Center" />
 
             <controls:GeometricProgressionView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+            
+            <controls:RombusView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />

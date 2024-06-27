@@ -97,6 +97,9 @@
 	  <MauiXaml Update="Controls\SquareView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Controls\TemplateForSuperCalculatorControlView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Controls\TriangleView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

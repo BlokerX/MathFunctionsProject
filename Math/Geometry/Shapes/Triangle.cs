@@ -45,12 +45,13 @@ namespace BlokMath.Geometry.Shapes
         }
 
         #region helper
-        private static decimal CalculateHeight(decimal a, decimal b, decimal c)
+        private decimal CalculateHeight(decimal a, decimal b, decimal c)
         {
             // Sprawdzamy, czy trójkąt o podanych bokach może istnieć
             if (a <= 0 || b <= 0 || c <= 0 || (a + b <= c) || (a + c <= b) || (b + c <= a))
             {
-                throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                //todo throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                return 0;
             }
 
             // Obliczamy połowę obwodu trójkąta
@@ -65,12 +66,13 @@ namespace BlokMath.Geometry.Shapes
             return ha;
         }
 
-        public static (decimal alpha, decimal beta, decimal gamma) CalculateAngles(decimal a, decimal b, decimal c)
+        public (decimal alpha, decimal beta, decimal gamma) CalculateAngles(decimal a, decimal b, decimal c)
         {
             // Sprawdzamy, czy trójkąt o podanych bokach może istnieć
             if (a <= 0 || b <= 0 || c <= 0 || (a + b <= c) || (a + c <= b) || (b + c <= a))
             {
-                throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                //todo throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                return (this.alpha, this.beta, this.gamma);
             }
 
             // Obliczamy kąty za pomocą prawa kosinusów
@@ -99,7 +101,48 @@ namespace BlokMath.Geometry.Shapes
 
         //a=Sqrt((c*c)-(b*b))
 
-        public decimal Area => (((a * a_h) / 2) + ((b * b_h) / 2) + ((c * c_h) / 2))/3;
+        public void Set_a(decimal a)
+        {
+            this.a = a;
+
+            if (b + c <= a)
+            {
+                //todo throw new ArgumentException("Suma wartości parametrów b i c nie może być mniejsza lub równa a.");
+                //throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+            }
+
+            Build_a_b_c_Triangle(this.a, this.b, this.c);
+        }
+
+        public void Set_b(decimal b)
+        {
+            this.b = b;
+
+            if (a + c <= b)
+            {
+                // todo throw new ArgumentException("Suma wartości parametrów a i c nie może być mniejsza lub równa b.");
+                //throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                return;
+            }
+
+            Build_a_b_c_Triangle(this.a, this.b, this.c);
+        }
+
+        public void Set_c(decimal c)
+        {
+            this.c = c;
+
+            if (a + b <= c)
+            {
+                //todo throw new ArgumentException("Suma wartości parametrów a i b nie może być mniejsza lub równa c.");
+                //throw new ArgumentException("Podane długości boków nie tworzą trójkąta.");
+                return;
+            }
+
+            Build_a_b_c_Triangle(this.a, this.b, this.c);
+        }
+
+        public decimal Area => (((a * a_h) / 2) + ((b * b_h) / 2) + ((c * c_h) / 2)) / 3;
 
         public decimal Circumference => a + b + c;
 

@@ -35,5 +35,76 @@ namespace SuperCalculatorMauiApp.Controls
         private bool isChanging = false;
 
         private Triangle _triangle = new Triangle(1,1,1, Triangle.TriangleBuildType.a_b_c_TriangleBuild);
+
+
+        private void a_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (isChanging)
+                return;
+
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            {
+                _triangle.Set_a(result);
+                UpdateObjectValues();
+            }
+        }
+
+        private void b_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (isChanging)
+                return;
+
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            {
+                _triangle.Set_b(result);
+                UpdateObjectValues();
+            }
+        }
+
+        private void c_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (isChanging)
+                return;
+
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            {
+                _triangle.Set_c(result);
+                UpdateObjectValues();
+            }
+        }
+
+
+
+        private void h_a_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void h_b_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void h_c_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+
+
+        private void alpha_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void beta_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void gamma_Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

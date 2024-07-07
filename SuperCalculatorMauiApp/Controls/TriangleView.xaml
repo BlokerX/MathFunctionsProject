@@ -105,7 +105,8 @@
                             Grid.Row="0"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="a_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="1"
@@ -120,7 +121,8 @@
                             Grid.Row="1"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="b_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="2"
@@ -135,7 +137,8 @@
                             Grid.Row="2"
                             Grid.Column="1"
                             FontSize="Small"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="c_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="4"
@@ -150,7 +153,8 @@
                             Grid.Row="4"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="h_a_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="5"
@@ -165,7 +169,8 @@
                             Grid.Row="5"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="h_b_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="6"
@@ -180,7 +185,8 @@
                             Grid.Row="6"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="h_c_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="8"
@@ -195,7 +201,8 @@
                             Grid.Row="8"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="alpha_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="9"
@@ -210,7 +217,8 @@
                             Grid.Row="9"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="beta_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="10"
@@ -225,7 +233,8 @@
                             Grid.Row="10"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            TextChanged="gamma_Entry_TextChanged" />
 
                         <Label
                             Grid.Row="12"

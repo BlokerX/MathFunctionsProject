@@ -11,18 +11,18 @@
         {
             if (n == 0)
                 return 1;
-            if(a == 0)
+            if (a == 0)
                 return 0;
             if (a == 1)
                 return 1;
 
 
-            if(n!= 1)
+            if (n != 1)
                 return a * Power(a, n - 1);
             else return a;
         }
 
-        public static decimal SquareRoot(decimal a, decimal precision = 0.00000000000001m)
+        public static decimal SquareRoot(decimal a, decimal precision = 0.0000000001m)
         {
             if (a < 0)
             {
@@ -31,14 +31,14 @@
             else if (a == 1) return 1;
 
             decimal guess = a / 2;
-            while (AbsoluteValue(guess*guess-a)> precision)
+            while (AbsoluteValue(guess * guess - a) > precision)
             {
-                guess = (guess+a/guess) / 2;
+                guess = (guess + a / guess) / 2;
             }
             return guess;
         }
-        
-        public static decimal CubeRoot(decimal a, decimal precision = 0.00000000000001m)
+
+        public static decimal CubeRoot(decimal a, decimal precision = 0.0000000001m)
         {
             if (a < 0)
             {
@@ -47,9 +47,9 @@
             else if (a == 1) return 1;
 
             decimal guess = a / 3;
-            while (AbsoluteValue(guess*guess*guess-a)> precision)
+            while (AbsoluteValue(guess * guess * guess - a) > precision)
             {
-                guess = (2*guess+a/(guess*guess)) / 3;
+                guess = (2 * guess + a / (guess * guess)) / 3;
             }
             return guess;
         }
@@ -74,7 +74,7 @@
         {
             if (n < 0)
                 throw new ArgumentException("Number must be non-negative.");
-            if(n == 0)
+            if (n == 0)
                 return 0;
 
             uint tmp = 1;

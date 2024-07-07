@@ -15,7 +15,12 @@
                 Text="Super mode"
                 VerticalOptions="Center" />
 
-            <controls:SquareView
+            <controls:CubeView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+            
+            <!--<controls:SquareView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
@@ -63,7 +68,7 @@
             <controls:SphereView
                 Margin="20"
                 HorizontalOptions="Fill"
-                VerticalOptions="Center" />
+                VerticalOptions="Center" />-->
 
         </VerticalStackLayout>
     </ScrollView>

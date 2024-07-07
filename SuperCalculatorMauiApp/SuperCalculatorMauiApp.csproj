@@ -91,6 +91,9 @@
 	  <MauiXaml Update="Controls\RombusView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Controls\SphereView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Controls\SquareFunctionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

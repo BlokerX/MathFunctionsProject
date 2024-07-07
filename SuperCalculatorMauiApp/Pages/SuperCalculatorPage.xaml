@@ -54,8 +54,13 @@
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
-            
+
             <controls:RombusView
+                Margin="20"
+                HorizontalOptions="Fill"
+                VerticalOptions="Center" />
+
+            <controls:SphereView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />

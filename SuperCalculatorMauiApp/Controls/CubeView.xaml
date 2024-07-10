@@ -218,7 +218,7 @@
                     BackgroundColor="Transparent"
                     BorderColor="Azure">
 
-                    <Label Text="transfer to for example CUBE" />
+                    <Label Text="transfer to square, rectangle or cuboid" />
 
                 </Frame>
 

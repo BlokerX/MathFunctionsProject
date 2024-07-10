@@ -21,7 +21,7 @@ namespace SuperCalculatorMauiApp.Controls
             Volume_Entry.Text = _cube.Volume.ToString();
             DiagonalOfFaceOfCube_Entry.Text = _cube.Face().d.ToString();
             SurfaceAreaOfFace_Entry.Text = _cube.Face().Area.ToString();
-            
+
             isChanging = false;
         }
 
@@ -58,7 +58,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _cube.LateralSurfaceArea)
             {
                 _cube.Set_LateralSurfaceArea(result);
                 UpdateObjectValues();
@@ -70,7 +71,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _cube.TotalSurfaceArea)
             {
                 _cube.Set_TotalSurfaceArea(result);
                 UpdateObjectValues();
@@ -82,7 +84,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging == true)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _cube.Volume)
             {
                 _cube.Set_Volume(result);
                 UpdateObjectValues();
@@ -94,7 +97,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _cube.Face().d)
             {
                 _cube.Set_DiagonalOfFaceOfCube(result);
                 UpdateObjectValues();
@@ -106,7 +110,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _cube.Face().Area)
             {
                 _cube.Set_SurfaceAreaOfFace(result);
                 UpdateObjectValues();

@@ -136,7 +136,7 @@
                             x:Name="c_Entry"
                             Grid.Row="2"
                             Grid.Column="1"
-                            FontSize="Small"
+                            FontSize="Medium"
                             Keyboard="Numeric"
                             TextChanged="c_Entry_TextChanged" />
 

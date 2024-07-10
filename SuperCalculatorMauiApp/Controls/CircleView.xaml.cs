@@ -67,7 +67,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _circle.Area)
             {
                 _circle.Set_Area(result);
                 UpdateObjectValues();

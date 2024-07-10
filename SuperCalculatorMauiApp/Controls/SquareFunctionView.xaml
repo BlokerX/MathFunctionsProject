@@ -134,7 +134,7 @@
                             x:Name="a_Entry"
                             Grid.Row="2"
                             Grid.Column="1"
-                            FontSize="Small"
+                            FontSize="Medium"
                             Keyboard="Numeric"
                             TextChanged="a_Entry_TextChanged" />
 
@@ -215,7 +215,8 @@
                             Grid.Row="7"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric" 
+                            IsEnabled="False"/>
 
                         <Label
                             Grid.Row="8"
@@ -230,7 +231,8 @@
                             Grid.Row="8"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            IsEnabled="False"/>
 
                         <Label
                             Grid.Row="9"

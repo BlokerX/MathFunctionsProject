@@ -5,6 +5,8 @@
         public const decimal PI = 3.141592653589793238462643383279502884M;
         public const decimal EulerNumber = 2.71828182845904523536M;
 
+        private const decimal DecimalPrecision = 0.00000001M; // 0.0000000000000000000000000001 / 28 miejsc po przecinku
+
         public static decimal AbsoluteValue(decimal x) => x > 0 ? x : -x;
 
         public static decimal Power(decimal a, decimal n)
@@ -22,7 +24,7 @@
             else return a;
         }
 
-        public static decimal SquareRoot(decimal a, decimal precision = 0.0000000001m)
+        public static decimal SquareRoot(decimal a, decimal precision = DecimalPrecision)
         {
             if (a < 0)
             {
@@ -38,7 +40,7 @@
             return guess;
         }
 
-        public static decimal CubeRoot(decimal a, decimal precision = 0.0000000001m)
+        public static decimal CubeRoot(decimal a, decimal precision = DecimalPrecision) //0.0000000001m
         {
             if (a < 0)
             {

@@ -20,7 +20,7 @@
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
             
-            <!--<controls:SquareView
+            <controls:SquareView
                 Margin="20"
                 HorizontalOptions="Fill"
                 VerticalOptions="Center" />
@@ -68,7 +68,7 @@
             <controls:SphereView
                 Margin="20"
                 HorizontalOptions="Fill"
-                VerticalOptions="Center" />-->
+                VerticalOptions="Center" />
 
         </VerticalStackLayout>
     </ScrollView>

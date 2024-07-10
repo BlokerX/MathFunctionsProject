@@ -43,7 +43,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _square.d)
             {
                 _square.Set_d(result);
                 UpdateObjectValues();
@@ -67,7 +68,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _square.Area)
             {
                 _square.Set_Area(result);
                 UpdateObjectValues();

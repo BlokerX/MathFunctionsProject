@@ -160,7 +160,8 @@
                             Grid.Row="4"
                             Grid.Column="1"
                             FontSize="Medium"
-                            Keyboard="Numeric" />
+                            Keyboard="Numeric"
+                            IsEnabled="False"/>
 
                     </Grid>
 

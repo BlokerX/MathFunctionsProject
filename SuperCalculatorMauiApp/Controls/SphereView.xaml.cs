@@ -1,4 +1,5 @@
-﻿using BlokMath.Geometry.Solids;
+﻿using BlokMath.Geometry.Shapes;
+using BlokMath.Geometry.Solids;
 
 namespace SuperCalculatorMauiApp.Controls
 {
@@ -56,7 +57,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _sphere.Volume)
             {
                 _sphere.Set_Volume(result);
                 UpdateObjectValues();
@@ -68,7 +70,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _sphere.SurfaceArea)
             {
                 _sphere.Set_SurfaceArea(result);
                 UpdateObjectValues();
@@ -92,7 +95,8 @@ namespace SuperCalculatorMauiApp.Controls
             if (isChanging)
                 return;
 
-            if (decimal.TryParse(((Entry)sender).Text, out decimal result))
+            if (decimal.TryParse(((Entry)sender).Text, out decimal result)
+                && result != _sphere.CircleCrossSection.Area)
             {
                 _sphere.Set_CircleCrossSectionArea(result);
                 UpdateObjectValues();

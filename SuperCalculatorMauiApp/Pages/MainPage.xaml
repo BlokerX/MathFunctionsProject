@@ -34,6 +34,13 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
             
             <Label
+                Text="Mogą się pojawiać błędy związane z przetważaniem typów decimal (zmiennoprzecinkowe lub związane z przekroczeniem limitu wartości typu), precyzją wyników wraz z uproszczeniami/szacunkami oraz takie które są wynikem pierwiastkowania lub mnożenia przez liczby wymierne takie jak pi czy liczba eulera."
+                Style="{StaticResource SubHeadline}"
+                FontSize="Caption"
+                SemanticProperties.HeadingLevel="Level3"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            
+            <Label
                 Text="Program jest projektem stypendialnym w fazie dynamicznego rozwoju&#10;Wszelkie błędy można zgłaszać na adres email producenta"
                 Style="{StaticResource SubHeadline}"
                 TextColor="GreenYellow"

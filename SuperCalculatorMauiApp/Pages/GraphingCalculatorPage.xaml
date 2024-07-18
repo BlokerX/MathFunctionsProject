@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SuperCalculatorMauiApp.Pages.GraphingCalculatorPage"
-             Title="GraphingCalculatorPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Graphing calculator"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+<ContentPage
+    x:Class="SuperCalculatorMauiApp.Pages.GraphingCalculatorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GraphingCalculatorPage">
+    <WebView
+        HorizontalOptions="Fill"
+        Source="https://www.desmos.com/calculator?lang=pl"
+        VerticalOptions="Fill" />
 </ContentPage>

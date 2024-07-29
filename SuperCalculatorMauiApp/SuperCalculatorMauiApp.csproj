@@ -57,6 +57,47 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\0_60.png" />
+	  <None Remove="Resources\Images\1_60.png" />
+	  <None Remove="Resources\Images\2_60.png" />
+	  <None Remove="Resources\Images\3_60.png" />
+	  <None Remove="Resources\Images\4_60.png" />
+	  <None Remove="Resources\Images\5_60.png" />
+	  <None Remove="Resources\Images\6_60.png" />
+	  <None Remove="Resources\Images\7_60.png" />
+	  <None Remove="Resources\Images\8_60.png" />
+	  <None Remove="Resources\Images\9_60.png" />
+	  <None Remove="Resources\Images\bezwzgledna_60.png" />
+	  <None Remove="Resources\Images\CE_60.png" />
+	  <None Remove="Resources\Images\cos_60.png" />
+	  <None Remove="Resources\Images\ctg_60.png" />
+	  <None Remove="Resources\Images\C_60.png" />
+	  <None Remove="Resources\Images\decimal_60.png" />
+	  <None Remove="Resources\Images\dzielnik_60.png" />
+	  <None Remove="Resources\Images\ex_60.png" />
+	  <None Remove="Resources\Images\hyp_60.png" />
+	  <None Remove="Resources\Images\kwadrat_60.png" />
+	  <None Remove="Resources\Images\ln_60.png" />
+	  <None Remove="Resources\Images\logxy_60.png" />
+	  <None Remove="Resources\Images\log_60.png" />
+	  <None Remove="Resources\Images\minus_60.png" />
+	  <None Remove="Resources\Images\mnoznik_60.png" />
+	  <None Remove="Resources\Images\pierwiastek3x_60.png" />
+	  <None Remove="Resources\Images\pierwiastekx_60.png" />
+	  <None Remove="Resources\Images\pierwiastek_60.png" />
+	  <None Remove="Resources\Images\pi_60.png" />
+	  <None Remove="Resources\Images\plus_60.png" />
+	  <None Remove="Resources\Images\potega_60.png" />
+	  <None Remove="Resources\Images\rownasie_60.png" />
+	  <None Remove="Resources\Images\silnia_60.png" />
+	  <None Remove="Resources\Images\sin_60.png" />
+	  <None Remove="Resources\Images\szescian_60.png" />
+	  <None Remove="Resources\Images\tg_60.png" />
+	  <None Remove="Resources\Images\ulamek_60.png" />
+	  <None Remove="Resources\Images\ypierwiastekx_60.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -121,6 +162,12 @@
 	  <MauiXaml Update="Pages\SuperCalculatorPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Resources\Images\CalculatorGraphics\60_white\ypierwiastekx_60b.png">
+	    <CopyToOutputDirectory></CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 </Project>

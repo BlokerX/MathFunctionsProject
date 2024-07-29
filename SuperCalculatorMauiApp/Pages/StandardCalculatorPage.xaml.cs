@@ -14,11 +14,8 @@ public partial class StandardCalculatorPage : ContentPage
         InitializeComponent();
     }
 
-    private void NumberButton_Clicked(object sender, EventArgs e)
+    private void NumberButton_Clicked(string digit)
     {
-        var button = (Button)sender;
-        string digit = button.Text;
-
         CalculatorDisplay.Text += digit;
         decimal d = decimal.Parse(CalculatorDisplay.Text);
 
@@ -44,6 +41,60 @@ public partial class StandardCalculatorPage : ContentPage
         }
     }
 
+    #region Number buttons
+
+    private void ZeroNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("0");
+    }
+
+    private void OneNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("1");
+    }
+
+    private void TwoNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("2");
+    }
+
+    private void ThreeNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("3");
+    }
+
+    private void FourNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("4");
+    }
+
+    private void FiveNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("5");
+    }
+
+    private void SixNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("6");
+    }
+
+    private void SevenNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("7");
+    }
+
+    private void EightNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("8");
+    }
+
+    private void NineNumberButton_Clicked(object sender, EventArgs e)
+    {
+        NumberButton_Clicked("9");
+    }
+
+    #endregion
+
     private void PlusMinusButton_Clicked(object sender, EventArgs e)
     {
         decimal displayValue = decimal.Parse(CalculatorDisplay.Text);
@@ -66,11 +117,8 @@ public partial class StandardCalculatorPage : ContentPage
         }
     }
 
-    private void OperationButton_Clicked(object sender, EventArgs e)
+    private void OperationButton_Clicked(char opr)
     {
-        var button = (Button)sender;
-        char opr = button.Text.FirstOrDefault();
-
         try
         {
             operation = (CalculatorOperationType)opr;
@@ -104,6 +152,30 @@ public partial class StandardCalculatorPage : ContentPage
         //        return;
         //}
     }
+
+    #region Operator buttons
+
+    private void AdditionOperationButton_Clicked(object sender, EventArgs e)
+    {
+        OperationButton_Clicked('+');
+    }
+
+    private void SubstractionOperationButton_Clicked(object sender, EventArgs e)
+    {
+        OperationButton_Clicked('-');
+    }
+
+    private void MultiplicationOperationButton_Clicked(object sender, EventArgs e)
+    {
+        OperationButton_Clicked('*');
+    }
+
+    private void DivisionOperationButton_Clicked(object sender, EventArgs e)
+    {
+        OperationButton_Clicked('/');
+    }
+
+    #endregion
 
     private void SqrtButton_Clicked(object sender, EventArgs e)
     {

@@ -5,9 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="ScientificCalculatorPage">
 
-    <VerticalStackLayout
-        HorizontalOptions="Center"
-        Spacing="5">
+    <VerticalStackLayout HorizontalOptions="Center">
 
         <Label
             HorizontalOptions="Center"
@@ -19,279 +17,424 @@
             FlowDirection="RightToLeft"
             Text="0" />
 
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="SqrtButton_Clicked"
                 CornerRadius="0"
-                Text="√" />
+                HeightRequest="60"
+                ImageSource="pierwiastek_60.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="Red"
                 BorderWidth="1"
                 Clicked="ClearEntryButton_Clicked"
                 CornerRadius="0"
-                Text="CE"
-                WidthRequest="30" />
+                HeightRequest="60"
+                ImageSource="ce.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="OrangeRed"
                 BorderWidth="1"
                 Clicked="ClearButton_Clicked"
                 CornerRadius="0"
-                Text="C" />
+                HeightRequest="60"
+                ImageSource="c.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="OperationButton_Clicked"
+                Clicked="DivisionOperationButton_Clicked"
                 CornerRadius="0"
-                Text="/" />
+                HeightRequest="60"
+                ImageSource="dzielnik_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="SevenNumberButton_Clicked"
                 CornerRadius="0"
-                Text="7" />
+                HeightRequest="60"
+                ImageSource="seven.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="EightNumberButton_Clicked"
                 CornerRadius="0"
-                Text="8" />
+                HeightRequest="60"
+                ImageSource="eight.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="NineNumberButton_Clicked"
                 CornerRadius="0"
-                Text="9" />
+                HeightRequest="60"
+                ImageSource="nine.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="OperationButton_Clicked"
+                Clicked="MultiplicationOperationButton_Clicked"
                 CornerRadius="0"
-                Text="*" />
+                HeightRequest="60"
+                ImageSource="mnoznik_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="FourNumberButton_Clicked"
                 CornerRadius="0"
-                Text="4" />
+                HeightRequest="60"
+                ImageSource="four.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="FiveNumberButton_Clicked"
                 CornerRadius="0"
-                Text="5" />
+                HeightRequest="60"
+                ImageSource="five.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="SixNumberButton_Clicked"
                 CornerRadius="0"
-                Text="6" />
+                HeightRequest="60"
+                ImageSource="six.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="OperationButton_Clicked"
+                Clicked="SubstractionOperationButton_Clicked"
                 CornerRadius="0"
-                Text="-" />
+                HeightRequest="60"
+                ImageSource="minus_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="OneNumberButton_Clicked"
                 CornerRadius="0"
-                Text="1" />
+                HeightRequest="60"
+                ImageSource="one.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="TwoNumberButton_Clicked"
                 CornerRadius="0"
-                Text="2" />
+                HeightRequest="60"
+                ImageSource="two.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="ThreeNumberButton_Clicked"
                 CornerRadius="0"
-                Text="3" />
+                HeightRequest="60"
+                ImageSource="three.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="OperationButton_Clicked"
+                Clicked="AdditionOperationButton_Clicked"
                 CornerRadius="0"
-                Text="+" />
+                HeightRequest="60"
+                ImageSource="plus_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Spacing="5">
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="PlusMinusButton_Clicked"
                 CornerRadius="0"
-                Text="±" />
+                HeightRequest="60"
+                Text="±"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
-                Clicked="NumberButton_Clicked"
+                Clicked="ZeroNumberButton_Clicked"
                 CornerRadius="0"
-                Text="0" />
+                HeightRequest="60"
+                ImageSource="zero.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="DecimalButton_Clicked"
                 CornerRadius="0"
-                Text="." />
+                HeightRequest="60"
+                ImageSource="decimal_60.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="EqualButton_Clicked"
                 CornerRadius="0"
-                Text="=" />
+                HeightRequest="60"
+                ImageSource="rownasie_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
         <HorizontalStackLayout>
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="PIButton_Clicked"
                 CornerRadius="0"
-                Text="π" />
+                HeightRequest="60"
+                ImageSource="pi_60.png"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="EulerNumberButton_Clicked"
                 CornerRadius="0"
-                Text="e" />
+                HeightRequest="60"
+                Text="e"
+                WidthRequest="60" />
+
             <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="EulerNumberToXPowButton_Clicked"
                 CornerRadius="0"
-                Text="e^x" />
-        </HorizontalStackLayout>
+                HeightRequest="60"
+                ImageSource="ex_60.png"
+                WidthRequest="60" />
 
-        <HorizontalStackLayout>
             <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="AbsoluteButton_Clicked"
-                CornerRadius="0"
-                Text="|x|" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="InversionButton_Clicked"
-                CornerRadius="0"
-                Text="1/x" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="FactorialButton_Clicked"
-                CornerRadius="0"
-                Text="n!" />
-        </HorizontalStackLayout>
-
-        <HorizontalStackLayout>
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="SquareButton_Clicked"
-                CornerRadius="0"
-                Text="x²" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="CubeButton_Clicked"
-                CornerRadius="0"
-                Text="x³" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="XToYPowButton_Clicked"
-                CornerRadius="0"
-                Text="x^y" />
-        </HorizontalStackLayout>
-
-        <HorizontalStackLayout>
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="SquareRootButton_Clicked"
-                CornerRadius="0"
-                Text="√x" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="CubeRootButton_Clicked"
-                CornerRadius="0"
-                Text="∛x" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="PierwiastekStopniaY_z_X_Button_Clicked"
-                CornerRadius="0"
-                Text="y√x" />
-        </HorizontalStackLayout>
-
-        <HorizontalStackLayout>
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="LogButton_Clicked"
-                CornerRadius="0"
-                Text="log" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="LogxYButton_Clicked"
-                CornerRadius="0"
-                Text="logxY" />
-            <Button
-                BorderColor="SkyBlue"
-                BorderWidth="1"
-                Clicked="LogNaturalButton_Clicked"
-                CornerRadius="0"
-                Text="ln" />
-        </HorizontalStackLayout>
-
-        <HorizontalStackLayout>
-            <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="SinButton_Clicked"
                 CornerRadius="0"
-                Text="sin" />
+                HeightRequest="60"
+                ImageSource="sin_60.png"
+                WidthRequest="60" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="AbsoluteButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="bezwzgledna_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="InversionButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="ulamek_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="FactorialButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="silnia_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="CosButton_Clicked"
                 CornerRadius="0"
-                Text="cos" />
+                HeightRequest="60"
+                ImageSource="cos_60.png"
+                WidthRequest="60" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SquareButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="kwadrat_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CubeButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="szescian_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="XToYPowButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="potega_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="TgButton_Clicked"
                 CornerRadius="0"
-                Text="tg" />
+                HeightRequest="60"
+                ImageSource="tg_60.png"
+                WidthRequest="60" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="SquareRootButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="pierwiastekx_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="CubeRootButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="pierwiastek3x_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="PierwiastekStopniaY_z_X_Button_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                Text="y√x"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="CtgButton_Clicked"
                 CornerRadius="0"
-                Text="ctg" />
+                HeightRequest="60"
+                ImageSource="ctg_60.png"
+                WidthRequest="60" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
             <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="log_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogxYButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="logxy_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
+                BorderColor="SkyBlue"
+                BorderWidth="1"
+                Clicked="LogNaturalButton_Clicked"
+                CornerRadius="0"
+                HeightRequest="60"
+                ImageSource="ln_60.png"
+                WidthRequest="60" />
+
+            <Button
+                Padding="0"
                 BorderColor="SkyBlue"
                 BorderWidth="1"
                 Clicked="HypButton_Clicked"
                 CornerRadius="0"
-                Text="hyp" />
-
+                HeightRequest="60"
+                ImageSource="hyp_60.png"
+                WidthRequest="60" />
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

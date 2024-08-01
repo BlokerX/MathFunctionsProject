@@ -9,11 +9,11 @@
             Spacing="25">
             
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="160"
+                Source="logo.png"
+                HeightRequest="250"
                 Margin="0,10,0,-30"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="App logo in png" />
 
             <Label
                 Text="Super Calculator"

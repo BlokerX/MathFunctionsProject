@@ -2,17 +2,11 @@
 <ContentPage
     x:Class="SuperCalculatorMauiApp.Pages.StandardCalculatorPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="StandardCalculatorPage">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <VerticalStackLayout
         HorizontalOptions="Center"
         Spacing="5">
-
-        <Label
-            HorizontalOptions="Center"
-            Text="Standard mode"
-            VerticalOptions="Center" />
 
         <Entry
             x:Name="CalculatorDisplay"

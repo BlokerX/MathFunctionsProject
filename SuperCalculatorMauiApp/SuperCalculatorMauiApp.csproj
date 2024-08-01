@@ -38,16 +38,24 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="128,128" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Images\logo.png" Resize="True" BaseSize="300,300" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -57,6 +65,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.png" />
 	  <None Remove="Resources\Images\0_60.png" />
 	  <None Remove="Resources\Images\1_60.png" />
 	  <None Remove="Resources\Images\2_60.png" />
@@ -78,6 +87,7 @@
 	  <None Remove="Resources\Images\hyp_60.png" />
 	  <None Remove="Resources\Images\kwadrat_60.png" />
 	  <None Remove="Resources\Images\ln_60.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\logxy_60.png" />
 	  <None Remove="Resources\Images\log_60.png" />
 	  <None Remove="Resources\Images\minus_60.png" />

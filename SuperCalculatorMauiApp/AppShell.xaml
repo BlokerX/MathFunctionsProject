@@ -6,13 +6,15 @@
     xmlns:local="clr-namespace:SuperCalculatorMauiApp.Pages"
     FlyoutHeaderBehavior="CollapseOnScroll"
     Title="SuperCalculatorMauiApp"
-    Shell.NavBarIsVisible="False"
+    Shell.NavBarHasShadow="False"
+    BackgroundColor="#DDDDDD"
+    Shell.NavBarIsVisible="True"
     Shell.TabBarIsVisible="False">
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
 
         <ShellContent
-            Title="Welcome"
+            Title="Welcome Page"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
 

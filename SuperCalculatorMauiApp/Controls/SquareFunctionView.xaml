@@ -59,243 +59,298 @@
                     HorizontalTextAlignment="Center"
                     Text="X" />
 
-                <Frame
+                <!--    -->
+                <Grid
                     Grid.Row="1"
-                    Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    BorderColor="Azure">
+                    Grid.ColumnSpan="2"
+                    ColumnSpacing="10"
+                    RowSpacing="10">
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="Transparent"
+                        BorderColor="Azure">
 
-                    <Grid
-                        Margin="5"
-                        ColumnSpacing="1"
-                        RowSpacing="10">
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                            <RowDefinition Height="1*" />
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*" />
-                            <ColumnDefinition Width="1*" />
-                        </Grid.ColumnDefinitions>
-
-                        <Label
-                            Grid.Row="0"
-                            Grid.Column="0"
+                        <Grid
                             Margin="5"
-                            FontSize="Small"
-                            HorizontalTextAlignment="End"
-                            Text="x"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="x_Entry"
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="x_Entry_TextChanged" />
+                            ColumnSpacing="1"
+                            RowSpacing="10">
 
-                        <Label
-                            Grid.Row="1"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Small"
-                            HorizontalTextAlignment="End"
-                            Text="y"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="y_Entry"
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            IsEnabled="False"
-                            Keyboard="Numeric" />
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                                <RowDefinition Height="1*" />
+                            </Grid.RowDefinitions>
 
-                        <Label
-                            Grid.Row="2"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Small"
-                            HorizontalTextAlignment="End"
-                            Text="a"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="a_Entry"
-                            Grid.Row="2"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="a_Entry_TextChanged" />
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
 
-                        <Label
-                            Grid.Row="3"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="b"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="b_Entry"
-                            Grid.Row="3"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="b_Entry_TextChanged" />
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Small"
+                                HorizontalTextAlignment="End"
+                                Text="x"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="x_Entry"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="x_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="4"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="c"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="c_Entry"
-                            Grid.Row="4"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="c_Entry_TextChanged" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Small"
+                                HorizontalTextAlignment="End"
+                                Text="y"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="y_Entry"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                IsEnabled="False"
+                                Keyboard="Numeric" />
 
-                        <Label
-                            Grid.Row="5"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="p"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="p_Entry"
-                            Grid.Row="5"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="p_Entry_TextChanged"/>
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Small"
+                                HorizontalTextAlignment="End"
+                                Text="a"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="a_Entry"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="a_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="6"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="q"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="q_Entry"
-                            Grid.Row="6"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="q_Entry_TextChanged"/>
+                            <Label
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="b"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="b_Entry"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="b_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="7"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="Delta"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="Delta_Entry"
-                            Grid.Row="7"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric" 
-                            IsEnabled="False"/>
+                            <Label
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="c"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="c_Entry"
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="c_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="8"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="DeltaSquareRoot"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="DeltaSquareRoot_Entry"
-                            Grid.Row="8"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            IsEnabled="False"/>
+                            <Label
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="p"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="p_Entry"
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="p_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="9"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="x0"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="x0_Entry"
-                            Grid.Row="9"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            TextChanged="x0_Entry_TextChanged"/>
+                            <Label
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="q"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="q_Entry"
+                                Grid.Row="6"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="q_Entry_TextChanged" />
 
-                        <Label
-                            Grid.Row="10"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="x1"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="x1_Entry"
-                            Grid.Row="10"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            IsEnabled="False"/>
+                            <Label
+                                Grid.Row="7"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="Delta"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="Delta_Entry"
+                                Grid.Row="7"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                IsEnabled="False"
+                                Keyboard="Numeric" />
 
-                        <Label
-                            Grid.Row="11"
-                            Grid.Column="0"
-                            Margin="5"
-                            FontSize="Medium"
-                            HorizontalTextAlignment="End"
-                            Text="x2"
-                            VerticalOptions="Center" />
-                        <Entry
-                            x:Name="x2_Entry"
-                            Grid.Row="11"
-                            Grid.Column="1"
-                            FontSize="Medium"
-                            Keyboard="Numeric"
-                            IsEnabled="False"/>
+                            <Label
+                                Grid.Row="8"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="DeltaSquareRoot"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="DeltaSquareRoot_Entry"
+                                Grid.Row="8"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                IsEnabled="False"
+                                Keyboard="Numeric" />
 
-                    </Grid>
+                            <Label
+                                Grid.Row="9"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="x0"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="x0_Entry"
+                                Grid.Row="9"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                Keyboard="Numeric"
+                                TextChanged="x0_Entry_TextChanged" />
 
-                </Frame>
+                            <Label
+                                Grid.Row="10"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="x1"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="x1_Entry"
+                                Grid.Row="10"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                IsEnabled="False"
+                                Keyboard="Numeric" />
 
-                <Frame
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    BackgroundColor="Azure"
-                    BorderColor="Azure">
-                    <Image
-                        Margin="10"
-                        HeightRequest="200"
-                        Source="i.i" />
-                </Frame>
+                            <Label
+                                Grid.Row="11"
+                                Grid.Column="0"
+                                Margin="5"
+                                FontSize="Medium"
+                                HorizontalTextAlignment="End"
+                                Text="x2"
+                                VerticalOptions="Center" />
+                            <Entry
+                                x:Name="x2_Entry"
+                                Grid.Row="11"
+                                Grid.Column="1"
+                                FontSize="Medium"
+                                IsEnabled="False"
+                                Keyboard="Numeric" />
+
+                        </Grid>
+
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="Azure"
+                        BorderColor="Azure">
+                        <Image
+                            Margin="10"
+                            HeightRequest="200"
+                            Source="i.i" />
+                    </Frame>
+
+                    <!--  Scalator mode  -->
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+
+                            <!--  Desktop  -->
+                            <VisualState x:Name="Wide">
+                                <VisualState.StateTriggers>
+                                    <AdaptiveTrigger MinWindowWidth="600" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="Grid.RowDefinitions">
+                                        <RowDefinitionCollection>
+                                            <RowDefinition Height="1*" />
+                                        </RowDefinitionCollection>
+                                    </Setter>
+                                    <Setter Property="Grid.ColumnDefinitions">
+                                        <ColumnDefinitionCollection>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </ColumnDefinitionCollection>
+                                    </Setter>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <!--  Mobile  -->
+                            <VisualState x:Name="Narrow">
+                                <VisualState.StateTriggers>
+                                    <AdaptiveTrigger MinWindowWidth="0" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="Grid.RowDefinitions">
+                                        <RowDefinitionCollection>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </RowDefinitionCollection>
+                                    </Setter>
+                                    <Setter Property="Grid.ColumnDefinitions">
+                                        <ColumnDefinitionCollection>
+                                            <ColumnDefinition Width="1*" />
+                                        </ColumnDefinitionCollection>
+                                    </Setter>
+                                </VisualState.Setters>
+                            </VisualState>
+
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </Grid>
+                <!--    -->
 
                 <Frame
                     Grid.Row="2"

@@ -61,31 +61,84 @@
                     HorizontalTextAlignment="Center"
                     Text="X" />
 
-                <Frame
+                <Grid
                     Grid.Row="1"
-                    Grid.Column="0"
-                    BackgroundColor="Transparent"
-                    BorderColor="Azure">
+                    Grid.ColumnSpan="2">
+                    
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
 
-                    <Grid x:Name="_GridWithProperties"
-                          Margin="0"
-                          Padding="0"
-                          VerticalOptions="Fill"
-                          HorizontalOptions="Fill"
-                          Background="Blue"/>
+                            <!--  Desktop  -->
+                            <VisualState x:Name="Wide">
+                                <VisualState.StateTriggers>
+                                    <AdaptiveTrigger MinWindowWidth="600" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="Grid.RowDefinitions">
+                                        <RowDefinitionCollection>
+                                            <RowDefinition Height="1*" />
+                                        </RowDefinitionCollection>
+                                    </Setter>
+                                    <Setter Property="Grid.ColumnDefinitions">
+                                        <ColumnDefinitionCollection>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="1*" />
+                                        </ColumnDefinitionCollection>
+                                    </Setter>
+                                </VisualState.Setters>
+                            </VisualState>
 
-                </Frame>
+                            <!--  Mobile  -->
+                            <VisualState x:Name="Narrow">
+                                <VisualState.StateTriggers>
+                                    <AdaptiveTrigger MinWindowWidth="0" />
+                                </VisualState.StateTriggers>
+                                <VisualState.Setters>
+                                    <Setter Property="Grid.RowDefinitions">
+                                        <RowDefinitionCollection>
+                                            <RowDefinition Height="1*" />
+                                            <RowDefinition Height="1*" />
+                                        </RowDefinitionCollection>
+                                    </Setter>
+                                    <Setter Property="Grid.ColumnDefinitions">
+                                        <ColumnDefinitionCollection>
+                                            <ColumnDefinition Width="1*" />
+                                        </ColumnDefinitionCollection>
+                                    </Setter>
+                                </VisualState.Setters>
+                            </VisualState>
 
-                <Frame
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    BackgroundColor="Azure"
-                    BorderColor="Azure">
-                    <Image
-                        Margin="10"
-                        HeightRequest="200"
-                        Source="{Binding ImgSrc}" />
-                </Frame>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                    
+                    <Frame
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        BackgroundColor="Transparent"
+                        BorderColor="Azure">
+
+                        <Grid
+                            x:Name="_GridWithProperties"
+                            Margin="0"
+                            Padding="0"
+                            Background="Blue"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Fill" />
+
+                    </Frame>
+
+                    <Frame
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="Azure"
+                        BorderColor="Azure">
+                        <Image
+                            Margin="10"
+                            HeightRequest="200"
+                            Source="{Binding ImgSrc}" />
+                    </Frame>
+
+                </Grid>
 
                 <Frame
                     Grid.Row="2"

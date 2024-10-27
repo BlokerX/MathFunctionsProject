@@ -61,6 +61,7 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\logo.png" Resize="True" BaseSize="300,300" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -92,6 +93,7 @@
 	  <None Remove="Resources\Images\hyp_60.png" />
 	  <None Remove="Resources\Images\kwadrat_60.png" />
 	  <None Remove="Resources\Images\ln_60.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\logxy_60.png" />
 	  <None Remove="Resources\Images\log_60.png" />
 	  <None Remove="Resources\Images\minus_60.png" />
@@ -124,47 +126,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-<<<<<<< HEAD
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\bezwzgledna_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\c.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ce.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\cos_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ctg_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\decimal_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\dzielnik_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\eight.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ex_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\five.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\four.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\hyp_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\kwadrat_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ln_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\logxy_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\log_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\minus_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\mnoznik_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\nine.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\one.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\pierwiastek3x_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\pierwiastekx_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\pierwiastek_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\pi_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\plus_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\potega_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\rownasie_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\seven.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\silnia_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\sin_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\six.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\szescian_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\tg_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\three.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\two.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ulamek_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\ypierwiastekx_60.png" />
-	  <MauiImage Include="Resources\Images\CalculatorButtonImages\zero.png" />
-=======
->>>>>>> 49fba17267cbf643b669ad67b9926620acaa8f58
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\arithmetic_progression.png" />
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\circle.png" />
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\cube.png" />
@@ -193,10 +154,6 @@
 	  <Compile Update="Controls\GeometricProgressionView.xaml.cs">
 	    <DependentUpon>GeometricProgressionView.xaml</DependentUpon>
 	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Update="Resources\Images\logo.png" Resize="True" BaseSize="300,300" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -126,6 +126,44 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Images\ButtonImages\bezwzgledna_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\c.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ce.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\cos_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ctg_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\decimal_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\dzielnik_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\eight.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ex_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\five.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\four.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\hyp_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\kwadrat_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ln_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\logxy_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\log_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\minus_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\mnoznik_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\nine.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\one.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\pierwiastek3x_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\pierwiastekx_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\pierwiastek_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\pi_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\plus_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\potega_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\rownasie_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\seven.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\silnia_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\sin_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\six.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\szescian_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\tg_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\three.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\two.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ulamek_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\ypierwiastekx_60.png" />
+	  <MauiImage Include="Resources\Images\ButtonImages\zero.png" />
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\arithmetic_progression.png" />
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\circle.png" />
 	  <MauiImage Include="Resources\Images\SuperCalculatorImages\cube.png" />

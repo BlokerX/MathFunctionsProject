@@ -176,12 +176,11 @@
                     <Frame
                         Grid.Row="0"
                         Grid.Column="1"
-                        BackgroundColor="Azure"
+                        BackgroundColor="White"
                         BorderColor="Azure">
                         <Image
                             Margin="10"
-                            HeightRequest="200"
-                            Source="a.a" />
+                            Source="geometric_progression.png" />
                     </Frame>
 
                     <!--  Scalator mode  -->

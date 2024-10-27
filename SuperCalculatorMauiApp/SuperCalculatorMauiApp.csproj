@@ -107,10 +107,37 @@
 	  <None Remove="Resources\Images\rownasie_60.png" />
 	  <None Remove="Resources\Images\silnia_60.png" />
 	  <None Remove="Resources\Images\sin_60.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\arithmetic_progression.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\circle.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\cube.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\geometric_progression.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\linear_function.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\parallelogram.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\rectangle.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\rombus.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\sphere.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\square.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\square_function.png" />
+	  <None Remove="Resources\Images\SuperCalculatorImages\triangle.png" />
 	  <None Remove="Resources\Images\szescian_60.png" />
 	  <None Remove="Resources\Images\tg_60.png" />
 	  <None Remove="Resources\Images\ulamek_60.png" />
 	  <None Remove="Resources\Images\ypierwiastekx_60.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\arithmetic_progression.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\circle.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\cube.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\geometric_progression.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\linear_function.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\parallelogram.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\rectangle.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\rombus.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\sphere.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\square.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\square_function.png" />
+	  <MauiImage Include="Resources\Images\SuperCalculatorImages\triangle.png" />
 	</ItemGroup>
 
 	<ItemGroup>
